@@ -10,14 +10,14 @@ spec:
     - host: acme.com
       http:
         paths:
-          - path: /api/reservations
+          - path: /api/r/
             pathType: Prefix
             backend:
               service:
                 name: reservations-clusterip-srv
                 port:
                   number: 80
-          - path: /api/car/cars
+          - path: /api/c/
             pathType: Prefix
             backend:
               service:
